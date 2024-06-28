@@ -1,5 +1,5 @@
 import React from 'react';
-import homeLogo from '../../assets/react.svg'
+import homeLogo from '../../assets/giphy.webp'
 import ListaPostagens from '../../components/postagens/listaPostagens';
 
 
@@ -7,7 +7,7 @@ import ListaPostagens from '../../components/postagens/listaPostagens';
 function Home() {
   return (
       <>
-      <div className="bg-indigo-900 flex justify-center ">
+      <div className="bg-black flex justify-center ">
         <div className='container grid grid-cols-2 text-white'>
           <div className="flex flex-col gap-4 items-center justify-center py-4">
             <h2 className='text-5xl font-bold'>Seja bem Vindos</h2>

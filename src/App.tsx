@@ -1,18 +1,20 @@
 import React from 'react';
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Login from './paginas/login/Login';
-import Cadastro from './paginas/cadastro/Cadastro';
-import Home from './paginas/Home/Home';
+import Cadastro from './paginas/cadastro/Cadastro'
+import Home from './paginas/home/Home'
 import { AuthProvider } from './contexts/AuthContext';
-import ListaTemas from './components/temas/listaTemas/ListaTemas';
-import FormularioTema from'./components/temas/formularioTema/FormularioTemat';
-import DeletarTema from './components/temas/deletarTema/DeletarTema';
-import ListaPostagens from './components/postagens/listaPostagens';
-
+import ListaTemas from './components/temas/listaTemas/ListaTemas'
+import FormularioTema from'./components/temas/formularioTema/FormularioTemat'
+import DeletarTema from './components/temas/deletarTema/DeletarTema'
+import ListaPostagens from './components/postagens/ListaPostagens'
+import FormularioPostagem from './components/formularioPostagem/FormularioPostagem'
+import DeletarPostagem from './components/postagens/deletarPostagem'
+import Perfil from './perfil/Perfil';
 
 function App() {
   return (
@@ -31,6 +33,10 @@ function App() {
               <Route path="/editarTema/:id" element={<FormularioTema />} />
               <Route path="/deletarTema/:id" element={<DeletarTema />} />
               <Route path="/postagens" element={<ListaPostagens />} />
+              <Route path="/cadastroPostagem" element={<FormularioPostagem />} />
+              <Route path="/editarPostagem/:id" element={<FormularioPostagem />} />
+              <Route path="/deletarPostagem/:id" element={<DeletarPostagem />} />
+              <Route path="/perfil" element={<Perfil />} />
             </Routes>
           </div>
           <Footer />

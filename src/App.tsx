@@ -1,27 +1,30 @@
-import React from 'react';
 import './App.css';
-
-import Navbar from './components/Navbar/Navbar'
-import Footer from './components/Footer/Footer'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import 'react-toastify/dist/ReactToastify.css';
 import Login from './paginas/login/Login';
-import Cadastro from './paginas/cadastro/Cadastro'
-import Home from './paginas/home/Home'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext';
-import ListaTemas from './components/temas/listaTemas/ListaTemas'
-import FormularioTema from'./components/temas/formularioTema/FormularioTemat'
-import DeletarTema from './components/temas/deletarTema/DeletarTema'
-import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens'
-import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem'
-import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem'
+import { ToastContainer } from 'react-toastify';
+import Cadastro from './paginas/cadastro/Cadastro';
+import Navbar from './components/Navbar/Navbar';
+import Home from './paginas/home/Home';
+import Footer from './components/Footer/Footer';
+import ListaTemas from './components/temas/listaTemas/ListaTemas';
+import FormularioTema from './components/postagens/formularioPostagem/FormularioPostagem';
+import DeletarTema from './components/temas/deletarTema/DeletarTema';
+import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens';
+import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem';
+
 import Perfil from './paginas/perfil/Perfil';
+import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem';
 
 function App() {
+  
   return (
     <>
-    <AuthProvider>
+      <AuthProvider>
+      <ToastContainer />
         <BrowserRouter>
-          <Navbar />
+        <Navbar />
           <div className='min-h-[80vh]'>
             <Routes>
               <Route path="/" element={<Login />} />
@@ -41,8 +44,9 @@ function App() {
           </div>
           <Footer />
         </BrowserRouter>
-        </AuthProvider>
+      </AuthProvider>
     </>
   );
 }
+
 export default App;

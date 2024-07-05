@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthContext';
-import Postagem from '../../models/Postagem';
+import {Postagem}from '../../models/Postagem';
 import { buscar } from '../../services/Service';
 import CardPostagem from '../postagens/CardPostagem';
 import { toastAlerta } from '../../utils/toastAlerta';

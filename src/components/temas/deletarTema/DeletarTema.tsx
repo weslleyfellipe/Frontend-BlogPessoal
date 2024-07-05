@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import { AuthContext } from '../../../contexts/AuthContext'
-import {Tema} from '../../../models/Tema'
+import Tema from '../../../models/Tema'
 import { buscar, deletar } from '../../../services/Service'
 import { toastAlerta } from '../../../utils/toastAlerta'
 

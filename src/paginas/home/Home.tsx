@@ -1,6 +1,6 @@
 import React from 'react';
 import homeLogo from '../../assets/giphy.webp'
-import ListaPostagens from '../../components/postagens/ListaPostagens';
+import ListaPostagens from '../../components/postagens/listaPostagens/ListaPostagens';
 import ModalPostagem from '../../components/modalPostagem/ModalPostagem';
 
 

@@ -11,9 +11,9 @@ import { AuthProvider } from './contexts/AuthContext';
 import ListaTemas from './components/temas/listaTemas/ListaTemas'
 import FormularioTema from'./components/temas/formularioTema/FormularioTemat'
 import DeletarTema from './components/temas/deletarTema/DeletarTema'
-import ListaPostagens from './components/postagens/ListaPostagens'
-import FormularioPostagem from './components/formularioPostagem/FormularioPostagem'
-import DeletarPostagem from './components/postagens/deletarPostagem'
+import ListaPostagens from './components/postagens/listaPostagens/ListaPostagens'
+import FormularioPostagem from './components/postagens/formularioPostagem/FormularioPostagem'
+import DeletarPostagem from './components/postagens/deletarPostagem/deletarPostagem'
 import Perfil from './paginas/perfil/Perfil';
 
 function App() {

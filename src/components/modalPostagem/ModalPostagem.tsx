@@ -1,5 +1,5 @@
 import React from 'react';
-import FormularioPostagem from '../formularioPostagem/FormularioPostagem';
+import FormularioPostagem from '../postagens/formularioPostagem/FormularioPostagem';
 
 import 'reactjs-popup/dist/index.css';
 import Popup from 'reactjs-popup';

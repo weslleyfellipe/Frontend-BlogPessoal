@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthContext';
-import {Tema} from '../../../models/Tema';
+import Tema from '../../../models/Tema';
 import { buscar } from '../../../services/Service';
 import CardTemas from '../cardTema/CardTema';
 import { toastAlerta } from '../../../utils/toastAlerta';

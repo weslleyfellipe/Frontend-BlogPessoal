@@ -1,7 +1,8 @@
-import Tema from './Tema';
 import Usuario from './Usuario';
+import Tema from './Tema';
 
-export  interface Postagem {
+
+export default interface Postagem {
   id: number;
   titulo: string;
   texto: string;

@@ -1,14 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import { AuthContext } from '../../contexts/AuthContext'
-import {Postagem} from '../../models/Postagem'
-import { buscar, deletar } from '../../services/Service'
-import { toastAlerta } from '../../utils/toastAlerta'
+import { AuthContext } from '../../../contexts/AuthContext'
+import Postagem from '../../../models/Postagem'
+import { buscar, deletar } from '../../../services/Service'
+import { toastAlerta } from '../../../utils/toastAlerta'
 
 function DeletarPostagem() {
   const [postagem, setPostagem] = useState<Postagem>({} as Postagem)
 
-  const navigate = useNavigate()
+  let navigate = useNavigate()
 
   const { id } = useParams<{ id: string }>()
 

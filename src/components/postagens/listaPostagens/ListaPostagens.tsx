@@ -1,16 +1,16 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Dna } from 'react-loader-spinner';
 import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../../contexts/AuthContext';
-import {Postagem}from '../../models/Postagem';
-import { buscar } from '../../services/Service';
-import CardPostagem from '../postagens/CardPostagem';
-import { toastAlerta } from '../../utils/toastAlerta';
+import { AuthContext } from '../../../contexts/AuthContext';
+import Postagem from '../../../models/Postagem';
+import { buscar } from '../../../services/Service';
+import CardPostagem from '../cardPostagem/CardPostagem';
+import { toastAlerta } from '../../../utils/toastAlerta';
 
 function ListaPostagens() {
   const [postagens, setPostagens] = useState<Postagem[]>([]);
 
-  let navigate = useNavigate();
+  const navigate = useNavigate();
 
   const { usuario, handleLogout } = useContext(AuthContext);
   const token = usuario.token;
